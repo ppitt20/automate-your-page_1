@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<!-- This is an HTML comment -->
+<head>
+  <title>Paulette's Notes</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="TOC">
+</div>
+    <h1>Table of Contents</h1>
+   <ol>
+      <li><a href="#lesson-1">Lesson 1: The Basics of the Web and HTML</a>
+        <ul>
+          <li><a href="#lesson-1.1">HTML</a></li>
+          <li><a href="#lesson-1.2">Tags and Elements</a></li>
+          <li><a href="#lesson-1.3">Summary of What I Learned</a></li>
+        </ul>
+</li>
+</ol>
+    <ol>
+  <li class="TOC-lesson"><a href="#lesson-2">Lesson 2: Creating a Structure Document using HTML </a>
+        <ul>
+          <li><a href="#lesson-2.1">What is purpose of HTML?</a></li>
+          <li><a href="#lesson-2.2">HTML's "tree-like" Structure</a></li>
+          <li><a href="#lesson-2.3">Indentations and Boxes</a></li>
+          <li><a href="#lesson-2.4">Text Editors</a></li>
+        </ul>
+      </li>
+</ol>
+<ol>
+<li class="TOC-lesson"><a href="#lesson-3">Lesson 3: Adding CSS Style to HTML Structure</a>
+        <ul>
+          <li><a href="#lesson-3.1">CSS</a></li>
+          <li><a href="#lesson-3-2">Avoiding Repetition</a></li>
+        </ul>
+</li>
+</ol>
+ <ol>
+<li class="TOC-lesson"><a href="#lesson-4">Lesson 4: Telling Computers What to Do</a>
+        <ul>
+          <li><a href="#lesson-4.1">Computers</a></li>
+          <li><a href="#lesson-4.2">Computer Program</a></li>
+          <li><a href="#lesson-4.3">Programming Language</a></li>
+          <li><a href="#lesson-4.4">Python</a></li>
+         <li><a href="#lesson-4.5">Grammar</a></li>
+         <li><a href="#lesson-4.6">Python Expressions</a></li>
+         <li><a href="#lesson-4.7">Variables and Strings</a></li>
+          <li><a href="#lesson-4.8">Functions</a></li>
+         <li><a href="#lesson-4.9">If and While Loop Statments</a></li>
+         <li><a href="#lesson-4.10">Debugging</a></li>
+         <li><a href="#lesson-4.11">Structured Data and Mutation and Append</a></li>
+         <li><a href="#lesson-4.12">How to Solve Python Problems</a></li>
+        </ul>
+</li>
+</ol>
+
+  Lesson 1: The Basics of the Web and HTML :
+  <div class="concept" id="lesson-1.1">
+</div>
+      <div class="concept-title">
+        HTML
+      </div>
+ <a href="http://www.udacity.com">Paulettenotes</a>
+       <p> HTML means HyperText Markup Lanuage</p>
+<p> Types of Hyper links are: Bold tag, Italics tag and Images tag</p>
+        <div class="concept" id="lesson-1.2">
+</div>
+      <div class="concept-title">
+        Tags and Elements
+      </div>
+<p> Examples of tags are:</p> 
+<em>HTML is <b>reasonably starightfoward</b></em>
+    <div class="concept" id="lesson-1.3">
+</div>
+      <div class="concept-title">
+        Summary of What I Have Learned
+      </div>
+<p>Summary of What You Have Learned:</p>
+    <em>The five most important things to take from this lesson are the following:</em>
+  <div>
+    <b>1 - What a Web Page is:</b>
+</div>
+A web page is a text document written in a language called HTML. Web browsers read these documents, and then interpret and 
+display them.<br>
+<div>
+  <b>2 - How Coding Works:</b>
+</div>
+Coding happens when programmers write text in a language that a computer can understand. The computer can then follow the 
+instructions the programmer wrote. For example, the computer might do this by making 
+text like this:
+I'm <b>learning</b> to code!
+look like this:
+I'm learning to code!<br>
+<div>
+  <b>3 - Computers are Stupid:</b>
+</div>
+Programmers need to write exactly the way a computer understands (also known as writing with correct "syntax").<br>
+For example, if you forget to close a &lt;b&gt; tag, the computer won't be able to figure out what you had intended to make bold. This "stupidity" can be very frustrating, but it also gives
+programmers incredible power: if you know how to talk to a computer than you can tell it to do anything you want.<br>
+  <b>4 - Programmers Can't Remember Everything:</b>
+   There are too many details to keep everything in your head. And that's okay. If you forget how to make text italic in HTML, you can always just look it up.<br>
+<b>5 - Basic HTML Vocabulary:</b>
+  You will be using HTML in the next few lessons, so it will be helpful if you're comfortable with the jargon.
+    Tag: An HTML tag is always contained within angled brackets. Most tags have an opening tag (&lt;p&gt; for example) and a closing tag, (&lt;/p&gt;). Some tags (called "void" tags) do not require a closing tag (like the br> tag).g).<br>
+    Element: An HTML element refers to everything within a set of opening and closing tags.<br>
+    Attribute: This is a property of an HTML element. For example, to set the href attribute of an anchor tag to the Udacity URL, you would write a href="www.udacity.com"> <br>
+    <br>
+     <b>Lesson 2 Notes: Creating a Structure Document using HTML</b><br>
+      <div class="concept" id="lesson-2.1">
+</div>
+      <div class="concept-title">
+        What is the purpose of HTML?
+        </div>
+        <b>HTML controls the "structure" of a webpage.</b><br>
+        <div class="concept" id="lesson-2.2">
+</div>
+      <div class="concept-title">
+        HTML's "tree-like Structure
+      </div>
+        A  "tree like structure" comes from the fact that HTML
+        elements can have other elements inside of them. These elements include tags and text. You can
+      draw this relationship like a family tree. 
+      When programmers talk about the "DOM" (Document Object Model), they are talking about the tree-like structure of a page.
+    <br>
+          <div class="concept" id="lesson-2.3">
+</div>
+      <div class="concept-title">
+        Indentations and Boxes
+      </div>
+      <b>The relationship between HTML and Boxes:</b><br>
+          When you read an HTML document as "text", you see changing 
+         indentations going up and down the left side
+        of the document. The more indented an element is, the more nested it is in it's 
+        corresponding "box". 
+   <br>
+            <div class="concept" id="lesson-2.4">
+</div>
+      <div class="concept-title">
+       Text Editors
+      </div>
+    <b>The tools programmers use to write code:</b>
+          <br>
+         Sublime text is a tool programmers use to write code. As your web page gets bigger, you will want to use a text editing program that you can keep on your computer like Sublime Text.<br>
+<br>
+  <b>Lesson: 3  Adding CSS Style to HTML Structure</b>
+<br>
+              <div class="concept" id="lesson-3.1">
+</div>
+      <div class="concept-title">
+        CSS
+      </div>
+  <b>What is CSS?</b>
+  <br>
+    CSS is code written to control the "style" of HTML elements. 
+   <br>
+     <b>What does CSS stands for?</b>
+    <br>
+    CSS stands for Cascading Style Sheets. This  gives programmers a way to control the style of related HTML elements. This is done by giving similar HTML elements the same <span class="code">class</span> name and then specifying the style that should apply to that class.
+  <br>
+     <div class="concept" id="lesson-3.2">
+</div>
+      <div class="concept-title">
+        Avoiding Repetition
+      </div>         
+    <b>Avoiding Repetition</b>
+  <br>
+  Programmers try to avoid repetition so that they will not have to keep doing the same thing over and over. Meaning, they will not be rewriting the same code many times and copying and pasting certain style attributes into many HTML elements.
+<br>
+<div>
+<br>
+<b>Lesson 4: Telling Computers What to Do: </b><br>
+</div>
+   <div class="concept" id="lesson-4.1">
+</div>
+      <div class="concept-title">
+    <b>Computer</b>
+</div>
+      Computer can be programmed to do anything we want, as long as, we can write a program that specifics precise sequence of instructions. 
+<br>
+<div class="concept" id="lesson-4.2">
+</div>
+      <div class="concept-title">
+    <b>Computer Program</b>
+</div>
+  <br>
+Computer Program - is a program with a precise sequence of steps that a computer can follow to do something useful.  Some examples of computer programs are web browsers, mobile apps, games and simple print statements.
+<br> 
+<div class="concept" id="lesson-4.3">
+</div>
+      <div class="concept-title">
+            <b>Programming Language</b>
+</div>
+  <br>
+A programming language is what programmers use to tell a computer what to do. Python is one example of a programming language.
+<br>
+<div class="concept" id="lesson-4.4">
+</div>
+      <div class="concept-title">
+    <b>Python</b>
+</div>
+  <br>
+Python is a programming language. When you write Python code and press “Run”, a Python interpreter converts the code you wrote as a set of instructions that the computer itself can understand an execute.
+<br>
+<div class="concept" id="lesson-4.5">
+</div>
+      <div class="concept-title">
+    <b>Grammar</b>
+</div>
+  <br>
+Programming languages have grammar. A grammar is a specification of “what is correct” and “what is incorrect”.
+<br>
+<div class="concept" id="lesson-4.6">
+</div>
+      <div class="concept-title">
+    <b>Python Expressions</b>
+</div>
+  <br>
+Python expression is a legal Python statement.  For example, 2 + 2 is a valid expression. 
+<br>
+<div class="concept" id="lesson-4.7">
+</div>
+      <div class="concept-title">
+           <b>Variables and Strings</b>
+</div>
+  <br>
+What is a variable in Python? 
+Variables give programmers a way to give names to values. We can assign the value 5 to the variable to my_variable by writing code like this: my_variable  = 5. <br>
+The difference of what the equal sign means in 2 + 4 = 6 and my_variable  = 6 is:
+In the line 2 + 4 = 6, the equal sign means “is the same as”.
+In the line my_variable = 6, the equal sign means “takes the value of”. <br>
+Some of the ways variables are useful include: <br>
+•	They improve code readability by using names that make sense to humans.
+•	They give us a way to store the value of important data.
+•	They give us a way to change the value of something. (for example, days = days -2)
+In Python, 2 is a number while “2” is a string. The code 2 + 2 would give 4.
+<br>
+<div class="concept" id="lesson-4.8">
+</div>
+      <div class="concept-title">
+           <b>Functions</b>
+</div>
+  <br>
+What is a function in Python?
+A function is something that takes input, does something to that input, and then produces output.
+ <br>
+What is the difference between making and using a function?
+Functions are made by starting a line of code with the keyword def and then giving a function name followed by the function parameters in parentheses. These parameters will eventually be replaced by actual values when the function is used (called).
+ <br>
+How do functions help programmers avoid repetition?
+Functions are tools that programmers can create and reuse forever! Once you've defined a function once, you never have to define it again. 
+<br>
+What happens if a function doesn't have a return statement?
+<br>
+The return keyword tells Python exactly what the function should produce as output. If a function doesn't have a return statement, then you'll get behavior like this:
+def add_two(x): 
+answer = x + 2 
+new_number = add_two(7)
+print new_number
+>>>None
+<br>
+<div class="concept" id="lesson-4.9">
+</div>
+      <div class="concept-title">
+           <b>If and While Loop Statement</b>
+</div>
+  <br>
+
+What are “If Statements and While Loops” in Python:
+<br>
+If Statement is a conditional that, when it is satisfied, activates some part of code. <br>
+While Loops is statement, which executes a block of code as long as its condition is true. The Break statement gives us a way to stop the loop while even the test condition is true.
+<br>
+<div class="concept" id="lesson-4.10">
+</div>
+      <div class="concept-title">
+           <b>Debugging</b>
+</div>
+  <br>
+5 Debugging strategies are: <br>
+1. Examine error messages when programs crash <br>
+2. Work from example code <br>
+3. Make sure examples work <br>
+4. Check (print) intermediate results <br>
+5. Keep and compare old versions 
+<br>
+<div class="concept" id="lesson-4.11">
+</div>
+      <div class="concept-title">
+           <b>Structured Data and Mutation and Append</b>
+</div>
+  <br>
+Structured Data is considered like a string. A string is a sequence of characters. Lists are elements that can be anything. 
+<br>
+Mutation can change a value in a list after the list has been created. 
+<br>
+Append is like a procedure but it is a method. Append adds a new element at the end of a list. 
+<br>
+<div class="concept" id="lesson-4.12">
+</div>
+      <div class="concept-title">
+           <b>How to Solve Python Problems</b>
+</div>
+  <br>
+How to Solve Python Problems:
+<br>
+0.	Don’t Panic! <br>
+1.	What are the inputs? <br>
+2.	What are the outputs? <br>
+3.	Work through some examples by hand <br>
+4.	Simple mechanical solutions <br>
+5.	Develop incrementally and test as we go<br>
+
+</body>
+
+</html>
